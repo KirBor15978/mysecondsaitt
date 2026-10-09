@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Strefa Gracza</title>
+    <meta name="description" content="Skontaktuj się ze Strefą Gracza, zaproponuj grę lub nawiąż współpracę.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">STREFA<span>GRACZA</span></a>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="recenzje.html">Recenzje</a>
+        <a href="news.html">News</a>
+        <a href="poradniki.html">Poradniki</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-intro">
+        <span class="page-label">✦ POROZMAWIAJMY O GRACH</span>
+        <h1>Masz do nas <span>sprawę?</span></h1>
+        <p>
+            Znasz świetną grę, masz pomysł na artykuł
+            albo chcesz nawiązać współpracę?
+            Napisz do nas — jesteśmy otwarci na gamingowe pomysły.
+        </p>
+    </section>
+
+    <section class="contact-layout">
+        <aside class="contact-info">
+            <span class="page-label">STREFA GRACZA</span>
+            <h2 style="margin-top: 12px;">Jesteśmy po drugiej stronie ekranu.</h2>
+
+            <p>
+                🎮 <strong>Propozycje gier</strong><br>
+                Podpowiedz nam, co warto sprawdzić.
+            </p>
+
+            <p>
+                ✉️ <strong>Współpraca</strong><br>
+                Masz pomysł na wspólny projekt?
+            </p>
+
+            <p>
+                💡 <strong>Opinie i sugestie</strong><br>
+                Pomóż nam rozwijać portal.
+            </p>
+
+            <div class="info-banner" style="margin: 25px 0 0; padding: 20px;">
+                <h3>Granie łączy ludzi.</h3>
+                <p>Stworzone przez graczy, dla graczy.</p>
+            </div>
+        </aside>
+
+        <form class="contact-form"
+              action="#"
+              method="post"
+              onsubmit="event.preventDefault(); alert('Formularz jest demonstracyjny. Skonfiguruj usługę wysyłania wiadomości, aby otrzymywać zgłoszenia.');">
+
+            <h2>Napisz wiadomość</h2>
+            <p style="color: var(--text-muted); font-size: 14px;">
+                Wypełnij pola poniżej.
+            </p>
+
+            <label for="name">Twoje imię</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Jak mamy się do Ciebie zwracać?"
+                   autocomplete="name" required>
+
+            <label for="email">Adres e-mail</label>
+            <input type="email" id="email" name="email"
+                   placeholder="ty@example.com"
+                   autocomplete="email" required>
+
+            <label for="subject">Temat wiadomości</label>
+            <select id="subject" name="subject" required>
+                <option value="">Wybierz temat</option>
+                <option value="gra">Propozycja gry do recenzji</option>
+                <option value="wspolpraca">Współpraca</option>
+                <option value="sugestia">Sugestia dotycząca strony</option>
+                <option value="inne">Inna sprawa</option>
+            </select>
+
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message"
+                      placeholder="Napisz, co masz na myśli..."
+                      required></textarea>
+
+            <button type="submit" class="button">
+                Wyślij wiadomość <span>↗</span>
+            </button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Strefa Gracza — stworzone przez graczy, dla graczy.</p>
+</footer>
+
+</body>
+</html>
